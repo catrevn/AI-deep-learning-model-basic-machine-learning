@@ -29,10 +29,7 @@ answer_text = scrolledtext.ScrolledText(root, height=24, width=60, wrap=tk.WORD,
 answer_text.pack(pady=10)
 
 # Hàm lọc từ đệm
-def remove_stopwords(question):
-    words = question.split()
-    filtered_words = [word for word in words if word.lower() not in stopwords_vi]
-    return " ".join(filtered_words)
+# Có thể xem clear-stopwords_vi ở trong profile của tôi để hoàn thiện phần này!
 
 # Hàm tìm kiếm và kết hợp kết quả
 def fetch_combined_answer(query):
